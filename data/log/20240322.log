@@ -1,0 +1,10 @@
+Mar 22 06:50:24  [info] -- (::1) op.Login.php 
+Mar 22 06:50:24  [info] Authentication service 'db'
+Mar 22 06:50:24  [info] Authentication service 'db': Authentication of user 'admin' successful.
+Mar 22 07:17:34  [info] -- (::1) op.Login.php 
+Mar 22 07:17:34  [info] Authentication service 'db'
+Mar 22 07:17:34  [info] Authentication service 'db': Authentication of user 'admin' successful.
+Mar 22 08:00:15  [info] admin (::1) op.AddDocument.php add document 1 in folder 1
+Mar 22 08:00:15  [info] Conversion from image/png to image/png with gd image service took 0.0050561428070068 sec.
+Mar 22 08:00:19  [info] Conversion from image/png to image/png with gd image service took 0.00077009201049805 sec.
+Mar 22 08:01:47  [info] admin (::1) op.ViewOnline.php?documentid=1&version=1 

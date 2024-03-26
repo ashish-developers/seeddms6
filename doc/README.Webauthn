@@ -1,0 +1,19 @@
+# How Webauthn is implemented in SeedDMЅ
+
+## The registration process
+
+## The login process
+
+The login process is based on two methods in SeedDMS_Controller_Login. They
+are both called from within a ajax call intitiated when the user clicks
+the 'Authenticate with Webauthn' button on the login page.
+
+preparelogin() is the first method which receives the login name enterned
+into login form. The method returns a json object containing challenge.
+That challange is passed on to the javascript function `webauthnAuthenticate()`
+definined in `views/bootstrap/class.Login.php`. `webauthnAuthenticate()`
+starts the dialog between the user and the browser, basically asking the
+user to grant access by touching the usb key. `webauthnAuthenticate()` returns
+an assertion which is passed to the second ajax call `login()`. It will
+authenticate the user by checking if one of the keys previously stored
+in the users' profile matches the assertion.
